@@ -1,0 +1,12 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: DestinationRule
+metadata:
+  name: hello-kubernetes-destination-rule
+  namespace: hello
+spec:
+  host: hello-kubernetes
+  subsets:
+  - name: live
+    labels:
+      app: hello-kubernetes
+      version: '1.0'

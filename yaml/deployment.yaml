@@ -1,0 +1,57 @@
+# github trigger
+
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: hello
+  labels:
+    istio-injection: enabled
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: hello-kubernetes
+  namespace: hello
+spec:
+  selector:
+    app: hello-kubernetes  # ties this service in with the pods
+  ports:
+    - name: http
+      protocol: TCP
+      port: 80          # container port
+      targetPort: 80    # service port
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-kubernetes
+  namespace: hello
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: hello-kubernetes
+  template:
+    metadata:
+      labels:
+        app: hello-kubernetes   # ties this deployment in with the service
+        version: '1.0'
+    spec:
+      containers:
+      - name: hello-kubernetes
+        image: markdavidjames/hello-kubernetes:1.0
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 80
+        readinessProbe:
+          tcpSocket:
+            port: 80
+          initialDelaySeconds: 5
+          periodSeconds: 10
+        livenessProbe:
+          tcpSocket:
+            port: 80
+          initialDelaySeconds: 15
+          periodSeconds: 20
