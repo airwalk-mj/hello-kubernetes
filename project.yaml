@@ -1,2 +1,6 @@
 
+# Author: Mark James (AirWalk)
+# Date: Jan '21
+
+# Modifying the version number will trigger the automated build pipeline in Spinnaker
 version='1.0.0'
