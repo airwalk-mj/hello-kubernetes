@@ -5,3 +5,6 @@
 # Modifying this file will trigger the automated 'Container Build' pipeline in Spinnaker
 
 version='1.0.0'
+
+
+# https://api.github.com/repos/airwalk-mj/hello-kubernetes/contents/manifest.yaml
