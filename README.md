@@ -6,7 +6,7 @@ This container image can be deployed on a Kubernetes cluster. When accessed via 
 - node os information
 
 
-# i'm a trigger - wegrg
+# i'm a trigger - wegrgcnvhm,b,bmb,
 
 ![Hello world! from the hello-kubernetes image](hello-kubernetes.png)
 
