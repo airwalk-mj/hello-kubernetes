@@ -10,7 +10,7 @@ data:
   github-org: airwalk-mj
   source-branch: main
   source-repo: 'https://github.com/airwalk-mj/hello-kubernetes'
-  target-image: 'markdavidjames/hello-kubernetes:999'
+  target-image: 'markdavidjames/hello-kubernetes'
 kind: ConfigMap
 metadata:
   name: app-config
