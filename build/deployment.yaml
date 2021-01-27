@@ -37,7 +37,7 @@ spec:
     metadata:
       labels:
         app: hello-kubernetes   # ties this deployment in with the service
-        version: '1.0'
+        version: ${app_version}
     spec:
       containers:
       - name: hello-kubernetes
