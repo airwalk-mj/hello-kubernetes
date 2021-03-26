@@ -1,5 +1,5 @@
 
-# i'm a trigger - woohoodfghdhdfh
+# i'm a trigger - woohoo
 
 # Hello Kubernetes
 
