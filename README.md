@@ -1,3 +1,6 @@
+
+# i'm a trigger - woohoohoo
+
 # Hello Kubernetes
 
 This container image can be deployed on a Kubernetes cluster. When accessed via a web browser on port `8080`, it will display:
@@ -6,7 +9,6 @@ This container image can be deployed on a Kubernetes cluster. When accessed via 
 - node os information
 
 
-# i'm a trigger - woohoohoo
 ![Hello world! from the hello-kubernetes image](hello-kubernetes.png)
 
 The default "Hello world!" message displayed can be overridden using the `MESSAGE` environment variable. The default port of 8080 can be overriden using the `PORT` environment variable.
