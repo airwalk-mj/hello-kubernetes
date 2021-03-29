@@ -1,7 +1,7 @@
 apiVersion: networking.istio.io/v1alpha3
 kind: DestinationRule
 metadata:
-  name: ${app_name}-destinationrule
+  name: ${app_name}-destination-rule
   namespace: hello
 spec:
   host: hello-kubernetes
