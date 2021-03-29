@@ -1,5 +1,5 @@
 
-# i'm a trigger - test12eyeht
+# i'm a trigger - test
 
 # Hello Kubernetes
 
