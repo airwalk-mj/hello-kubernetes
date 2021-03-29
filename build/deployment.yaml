@@ -13,7 +13,7 @@ metadata:
   namespace: hello
 spec:
   selector:
-    app: hello-kubernetes  # ties this service in with the pods
+    app: ${app_name}  # ties this service in with the pods
   ports:
     - name: http
       protocol: TCP
