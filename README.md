@@ -1,5 +1,5 @@
 
-# i'm a trigger - testergrghe
+# i'm a trigger - test
 
 # Hello Kubernetes
 
