@@ -8,5 +8,5 @@ spec:
   subsets:
   - name: live
     labels:
-      app: hello-kubernetes
+      app: ${app_name}
       version: ${app_version}
