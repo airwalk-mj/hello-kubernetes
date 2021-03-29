@@ -24,21 +24,21 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: hello-kubernetes
+  name: ${app_name}
   namespace: hello
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: hello-kubernetes
+      app: ${app_name}
   template:
     metadata:
       labels:
-        app: hello-kubernetes   # ties this deployment in with the service
+        app: ${app_name}   # ties this deployment in with the service
         version: ${app_version}
     spec:
       containers:
-      - name: hello-kubernetes
+      - name: ${app_name}
         image: ${image_name}
         imagePullPolicy: Always
         ports:
