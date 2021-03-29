@@ -24,7 +24,7 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: hello-kubernetes-${app_version}
+  name: hello-kubernetes
   namespace: hello
 spec:
   replicas: 2
