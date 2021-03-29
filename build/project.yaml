@@ -2,7 +2,7 @@ apiVersion: v1
 data:
   log-level: 'info'
   app-major-version: '1'
-  app-minor-version: '3'
+  app-minor-version: '1'
   app-name: hello-kubernetes
   config-version: '1'
   deploy-dev: 'true'
@@ -12,7 +12,7 @@ data:
   source-branch: main
   source-repo: 'https://github.com/airwalk-mj/hello-kubernetes'
   target-image: 'markdavidjames/hello-kubernetes'
-  canary: 'true'
+  canary: 'false'
 kind: ConfigMap
 metadata:
   name: app-config
