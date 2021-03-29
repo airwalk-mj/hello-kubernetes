@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: ${app_name}-virtual-service
+  name: ${app_name}
   namespace: hello
 spec:
   selector:
