@@ -4,7 +4,7 @@ data:
   app-major-version: '1'
   app-minor-version: '1'
   app-name: hello-kubernetes
-  config-version: '2'
+  config-version: '1'
   deploy-dev: 'true'
   deploy-preprod: 'true'
   deploy-prod: 'false'
