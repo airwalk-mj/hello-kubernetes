@@ -16,4 +16,4 @@ data:
   canary: 'false'
 kind: ConfigMap
 metadata:
-  name: app-config
+  name: hello-kubernetes-config
