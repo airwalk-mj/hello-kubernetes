@@ -1,4 +1,4 @@
-# I am a trigger!!
+# I am a trigger!
 
 # Hello Kubernetes
 
